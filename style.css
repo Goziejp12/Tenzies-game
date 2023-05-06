@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    margin: 0 auto;
+    background: #0B2434;
+    max-width: 480px;
+    height: 70vh;
+    width: 80vw;
+}
+
+.game-area {
+    background-color: #ffffff;
+    max-width: 400px;
+    width: 70vw;
+    height: 60vh;
+    margin: auto;
+    border-radius: 5px;
+}
