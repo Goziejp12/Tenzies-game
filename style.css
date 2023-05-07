@@ -13,7 +13,7 @@ main {
     margin: 0 auto;
     background: #0B2434;
     max-width: 550px;
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
 }
 
@@ -31,7 +31,7 @@ main {
     justify-content: center;
     background: #F5F5F5;
     max-width: 480px;
-    width: 80vw;
+    width: 85vw;
     height: 80vh;
     margin: auto;
     padding: 1em;
