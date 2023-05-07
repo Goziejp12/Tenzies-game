@@ -3,6 +3,7 @@
 }
 
 body {
+    font-family: inter;
     margin: 0;
     padding: 0;
 }
@@ -16,11 +17,74 @@ main {
     width: 80vw;
 }
 
-.game-area {
-    background-color: #ffffff;
+.game-layout,
+.game-win {
+    display: flex;
+    flex-direction: column;
+}
+
+.game-layout {
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+    justify-content: center;
+    background: #F5F5F5;
     max-width: 400px;
     width: 70vw;
     height: 60vh;
     margin: auto;
+    padding: 1em;
+}
+
+.game-layout,
+.die p,
+.roll-btn {
     border-radius: 5px;
+}
+
+.game-layout h1, 
+.game-layout p,
+.die p  {
+    margin: 0;
+}
+
+.dice-box {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2em;
+}
+
+.die p {
+    font-size: 1.3rem;
+    background-color: #ffffff;
+    font-weight: 700;
+    padding: 0.5em;
+    width: 40px;
+    cursor: pointer;
+    box-shadow: 0px 2px 2px 0px #00000026;
+}
+
+.roll-btn {
+    font-size: 1rem;
+    font-family: inter;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 1em auto 0;
+    padding: 0.5em 5em;
+    border: none;
+    background-color: #5035ffc4;
+    cursor: pointer;
+}
+
+.roll-btn:hover {
+    background-color: #5035FF;
+}
+
+.roll-btn:active {
+    box-shadow: 0px 2px 2px 5px #00000026;
+}
+
+.game-win {
+    font-size: 3rem;
+    text-align: center;
 }
