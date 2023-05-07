@@ -13,7 +13,7 @@ main {
     margin: 0 auto;
     background: #0B2434;
     max-width: 550px;
-    height: 90vh;
+    height: 100vh;
     width: 100vw;
 }
 
@@ -52,7 +52,7 @@ main {
 .dice-box {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 1em;
+    gap: 1.5em;
 }
 
 .die p {
