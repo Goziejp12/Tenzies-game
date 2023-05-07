@@ -24,7 +24,7 @@ main {
     max-width: 480px;
     width: 85vw;
     height: 80vh;
-    margin: auto;
+    margin: 4em auto;
     padding: 1em;
 }
 
@@ -78,5 +78,6 @@ main p,
 
 .game-win {
     font-size: 3rem;
+    color: #ffffff;
     text-align: center;
 }
