@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Die from './Die'
 import { nanoid } from 'nanoid'
-import Confetti from 'react-confetti'
+// import Confetti from 'react-confetti'
 
 export default function App() {
     const [dice, setDice] = useState(createNewDiceArray)
@@ -95,7 +95,7 @@ export default function App() {
             </main>
             :
             <div className='game-win'>
-                {tenzies && <Confetti />}
+                {/* {tenzies && <Confetti />} */}
                 <h1>You have won!</h1>
                 <button 
                     className='roll-btn'
