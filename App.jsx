@@ -74,7 +74,7 @@ export default function App() {
         
     return (
         !tenzies ? 
-            <main>
+            <div className='game-layout'>
                 <h1>Tenzies</h1>
                 <p>
                     Roll until all dice are the same. 
@@ -88,9 +88,9 @@ export default function App() {
                     className='roll-btn'
                     onClick={rollNewDice}
                     >
-                {tenzies ? "New Game" : "Roll"}
+                    {tenzies ? "New Game" : "Roll"}
                 </button>
-            </main>
+            </div>
             :
             <div className='game-win'>
                 {/* {tenzies && <Confetti />} */}
