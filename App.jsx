@@ -19,6 +19,8 @@ export default function App() {
         }
     }, [dice])
 
+    /* Create a new array of length 10 with random numbers from 1 to 6
+    as the values */ 
     function createNewDiceArray() {
         const diceArray = []
         for(let i = 0; i < 10; i++) {
@@ -30,6 +32,7 @@ export default function App() {
         }
         return diceArray
     }
+
     /* Toggling the isHeld property between true and false, and the die 
         background-color between lime green and white. The idea is to 
         hold a die when it is clicked
