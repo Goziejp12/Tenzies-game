@@ -1,1 +1,2 @@
-# Tenzies-game - React project
+# Tenzies-game 
+## React project
