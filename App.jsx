@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import Die from './Die'
 import { nanoid } from 'nanoid'
-// import Confetti from 'react-confetti'
+import Confetti from 'react-confetti'
 
 export default function App() {
     const [dice, setDice] = useState(createNewDiceArray)
     const [tenzies, setTenzies] = useState(false)
 
-    /* Check if all the dice value properties are the same and all the
+    /* 
+        Check if all the dice value properties are the same and all the
         isHeld property is true. If it returns true, the game is won
     */
     useEffect(() => {
@@ -19,8 +20,10 @@ export default function App() {
         }
     }, [dice])
 
-    /* Create a new array of length 10 with random numbers from 1 to 6
-    as the values */ 
+    /*  
+        Create a new array of length 10 with random numbers from 1 to 6
+        as the values 
+    */ 
     function createNewDiceArray() {
         const diceArray = []
         for(let i = 0; i < 10; i++) {
@@ -33,7 +36,8 @@ export default function App() {
         return diceArray
     }
 
-    /* Toggling the isHeld property between true and false, and the die 
+    /* 
+        Toggling the isHeld property between true and false, and the die 
         background-color between lime green and white. The idea is to 
         hold a die when it is clicked
     */
@@ -45,7 +49,8 @@ export default function App() {
             })
         })
     }
-    /* If the game is won(all the dice values are the same and tenzies
+    /* 
+        If the game is won(all the dice values are the same and tenzies
         is true), create a new dice array. Else continue running the
         game in the normal process as follows; If a die is held(isHeld 
         is true), don't roll it when the roll button is clicked to roll 
@@ -96,7 +101,7 @@ export default function App() {
             </div>
             :
             <div className='game-win'>
-                {/* {tenzies && <Confetti />} */}
+                {tenzies && <Confetti />}
                 <h1>You have won!</h1>
                 <button 
                     className='roll-btn'
